@@ -1,0 +1,57 @@
+
+agregar. referencia   Microsoft.Visual
+
+using Microsoft.VisualBasic;
+
+ string texto = "";
+texto=txtTexto.Text;
+txtDerecha.Text = Strings.Right(texto, 3);
+txtIzquierda.Text = Strings.Left(texto,3);
+txtMinuscula.Text = Strings.LCase(texto);
+txtMayuscula.Text = Strings.UCase(texto);
+txtSinespacio.Text = Strings.Trim(texto);
+txtSinespacio.Text = Strings.Trim(texto);
+txtRepetir.Text = texto.PadLeft(8,char.Parse("0"));   //repetir//
+txtRemplazar.Text = texto.Replace(" ", "");
+
+
+
+
+
+ double numero = 0;
+ numero = double.Parse(txtNumero.Text);
+
+ txtRedondeo.Text = Math.Round(numero, 2).ToString();
+ txtPotencia.Text = Math.Pow(numero,double.Parse("3"))
+     .ToString();
+ Random randon = new Random();
+ txtRandon.Text = randon.Next(5, 1000).ToString();
+ txtAbsoluto.Text = Math.Abs(numero).ToString();
+
+
+
+
+DateTime fecha;
+fecha = dtFecha.Value;
+txtDia.Text = fecha.Day.ToString();
+txtMes.Text = fecha.Month.ToString();
+txtAño.Text = fecha.Year.ToString();
+txtRango.Text = (DateTime.Now - fecha).Days.ToString();
+
+
+
+
+DateTime fecha;
+fecha = dtFecha.Value;
+txtDia.Text = fecha.Day.ToString();
+txtMes.Text = fecha.Month.ToString();
+txtAño.Text = fecha.Year.ToString();
+txtRango.Text = (DateTime.Now - fecha).Days.ToString();
+txtFechacorta.Text = fecha.ToShortDateString();
+txtFechalarga.Text = fecha.ToString();
+txtFormato.Text = fecha.ToString("yyyyMMdd");
+
+
+CLASES
+
+
